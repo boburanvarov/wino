@@ -1,0 +1,84 @@
+
+<header class="header">
+    <div class="container">
+        <div class="main-menu">
+            <div class="logo">
+                <h2 class="logo-item">ЛОГО</h2>
+            </div>
+            <ul class="menu">
+                <li class="menu-item" routerLinkActive="active current" routerLink="/" [routerLinkActiveOptions]="{exact:true}">
+                    <a>Главная</a>
+                </li>
+                <li class="menu-item"  routerLinkActive="active current" routerLink="/cards/card-catalog">
+                    <a>каталог</a>
+                </li>
+                <li class="menu-item"  routerLinkActive="active current" routerLink="/news">
+                    <a>новости</a>
+                </li>
+                <li class="menu-item"  routerLinkActive="active current" routerLink="/experts">
+                    <a>эксперты</a>
+                </li>
+                <li class="menu-item"  routerLinkActive="active current" routerLink="/about-project">
+                    <a>О проекте</a>
+                </li>
+            </ul>
+        </div>
+      
+       
+        <div class="register">
+            <h5 class="register-title">вход</h5>
+            <button class="userIcon">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.9285 11.4809V10.3789C10.9285 9.79433 10.6778 9.23372 10.2316 8.82037C9.78548 8.40702 9.18035 8.1748 8.54937 8.1748H3.7912C3.16022 8.1748 2.55509 8.40702 2.10893 8.82037C1.66276 9.23372 1.41211 9.79433 1.41211 10.3789V11.4809"
+                        stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M6.17057 5.97167C7.48449 5.97167 8.54963 4.98486 8.54963 3.76757C8.54963 2.55028 7.48449 1.56348 6.17057 1.56348C4.85665 1.56348 3.7915 2.55028 3.7915 3.76757C3.7915 4.98486 4.85665 5.97167 6.17057 5.97167Z"
+                        stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="banner">
+    <div class="banner-block">
+        <img src="../../../assets/img/banner.png" alt="#">
+    </div>
+    <div class="banner-search">
+        <h3 class="search-title">Поиск</h3>
+        <div class="search">
+            <input class="search-inp" type="text" placeholder="Вино красное, урожай 2015 года">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="banner-block">
+        <img src="../../../assets/img/banner.png" alt="#">
+    </div>
+</div>
+
+<div class="container">
+
+ <block-quote></block-quote>
+
+    <div class="cards-info">
+        <h4 class="cards-title">Wineincognito рекомендует</h4>
+        <cards-catalog></cards-catalog>
+        <div class="load-more">
+            <h6 class="load-more-text">загрузить ещё </h6>
+        </div>
+    </div>
+    <div class="news-info">
+        <h4 class="cards-title">Новости и исследования</h4>
+        <news-catalog></news-catalog>
+        <div class="load-more">
+            <h6 class="load-more-text">загрузить ещё </h6>
+        </div>
+    </div>
+    
+
+</div>
+<app-footer></app-footer>

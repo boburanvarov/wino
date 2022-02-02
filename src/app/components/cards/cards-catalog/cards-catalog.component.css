@@ -1,0 +1,61 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  
+}
+
+.card {
+    width: 358px;
+    height: 512px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 34px 49px;
+}
+
+.card .favorite-icon {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.card .favorite-icon img {
+    cursor: pointer;
+}
+
+
+.card h2.card-title {
+    text-align: center;
+    margin: 10px 0 0;
+    font-family: "roboto-400";
+    font-size: 24px;
+    line-height: 32px;
+    color: #4D4D4D;
+    height: 96px;
+}
+
+.card .card-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 49px;
+}
+
+.card .card-img-block {
+    mix-blend-mode: darken; 
+}
+
+.card .card-info .flavors-img-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card .card-info .flavors-img-block .fruits {
+    display: flex;
+    gap: 0 16px;
+    margin-top: 10px;
+}

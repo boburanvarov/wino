@@ -1,0 +1,36 @@
+
+/* roboto-300 */
+@font-face {
+    font-family: 'roboto-300';
+    src: url(../fontfamily/Roboto-Light.ttf);
+}
+
+/* roboto-400 */
+@font-face {
+    font-family: 'roboto-400';
+    src: url(../fontfamily/Roboto-Regular.ttf);
+}
+
+/* roboto-500 */
+@font-face {
+    font-family: 'roboto-500';
+    src: url(../fontfamily/Roboto-Medium.ttf);
+}
+
+/* roboto-700 */
+@font-face {
+    font-family: 'roboto-700';
+    src: url(../fontfamily/Roboto-Bold.ttf);
+}
+
+/* roboto-400 */
+@font-face {
+    font-family: 'inter-400';
+    src: url(../fontfamily/Inter-Regular.ttf);
+}
+
+/* roboto-600 */
+@font-face {
+    font-family: 'inter-600';
+    src: url(../fontfamily/Inter-SemiBold.ttf);
+}

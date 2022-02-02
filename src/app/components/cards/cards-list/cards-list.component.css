@@ -1,0 +1,47 @@
+.card{
+    width: 1004px;
+    height: 220px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.card .card-img-block {
+    mix-blend-mode: darken; 
+    margin: auto 0;
+}
+
+.card .rating-info,
+.card .main-flavors-info{
+    margin: 51px 0;
+}
+
+.card .rating-number{
+    font-size: 80px;
+    line-height: 94px;
+    font-family: "roboto-400";
+    color: #9D4E6D;
+}
+
+.card .main-flavors-info .fruits{
+    margin: 30px 0;
+    display: flex;
+    gap: 0 18px;
+}
+
+.card  .card-title{
+    font-family: "roboto-400";
+    font-size: 35px;
+    line-height: 42px;
+    color: #333;
+    width: 471px;
+    margin-top: 40px;
+}
+
+.card .favorite-icon{
+    margin-top: 23px;
+}

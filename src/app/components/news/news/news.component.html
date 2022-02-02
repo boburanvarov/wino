@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+    <div class="container">
+        <nz-breadcrumb nzSeparator=">">
+            <nz-breadcrumb-item>
+                <a class="breadcrumb-link-first">Главная</a> 
+            </nz-breadcrumb-item>
+            <nz-breadcrumb-item>
+              <a class="breadcrumb-link-second">Новости</a>
+            </nz-breadcrumb-item>
+          </nz-breadcrumb>
+        <h3 class="terms-title">Новости, дегустации, конкурсы</h3>
+        <div class="news-content">
+            <news-list></news-list>
+            <div class="year-filter">
+                <p class="year-filter-text" *ngFor="let year of years">{{year.name}}</p>
+            </div>
+        </div>
+        <div class="load-more">
+            <h6 class="load-more-text">загрузить ещё </h6>
+        </div>
+    </div>
+
+    <app-footer></app-footer>

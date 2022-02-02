@@ -1,0 +1,212 @@
+
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="wrapper">
+        <nz-breadcrumb nzSeparator=">">
+            <nz-breadcrumb-item>
+                <a class="breadcrumb-link-first">Главная</a> 
+            </nz-breadcrumb-item>
+            <nz-breadcrumb-item>
+              <a class="breadcrumb-link-second">Каталог</a>
+            </nz-breadcrumb-item>
+          </nz-breadcrumb>
+        <div class="cards-info">
+            <div class="img-block">
+                <img src="{{img}}" alt="">
+            </div>
+            <div class="info-content">
+                <div class="info-header">
+                    <div class="rating">
+                        <p class="rating-text">Рейтинг Wi</p>
+                        <h3 class="rating-number">{{ratingNumber}}</h3>
+                    </div>
+                    <h4 class="card-title">
+                        {{title}}
+                    </h4>
+                    <div class="favorite-icon">
+                        <svg class="noLike" (click)="favoriteIcon()" [ngClass]="{'favorite': !favorite}" 
+                         width="15" height="27" viewBox="0 0 15 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_2005_119" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.85274 0H7.44015H7.51216H13.0996C17.4654 10.6721 12.9379 14.0677 11.4826 15.0379C10.3184 15.814 8.84121 16.3315 8.24817 16.4932V25.5485H12.2894C12.6467 25.5485 12.9362 25.8381 12.9362 26.1953C12.9362 26.5525 12.6467 26.8421 12.2894 26.8421H2.91098C2.55376 26.8421 2.26418 26.5525 2.26418 26.1953C2.26418 25.8381 2.55376 25.5485 2.91098 25.5485H6.70414V16.4932C6.11109 16.3315 4.63394 15.814 3.46972 15.0379C2.01444 14.0677 -2.5131 10.6721 1.85274 0Z"/>
+                            </mask>
+                            <path d="M1.85274 0V-2H0.510037L0.00164529 -0.757266L1.85274 0ZM13.0996 0L14.9507 -0.757266L14.4423 -2H13.0996V0ZM11.4826 15.0379L10.3732 13.3738L10.3732 13.3738L11.4826 15.0379ZM8.24817 16.4932L7.72205 14.5636L6.24817 14.9655V16.4932H8.24817ZM8.24817 25.5485H6.24817V27.5485H8.24817V25.5485ZM6.70414 25.5485V27.5485H8.70414V25.5485H6.70414ZM6.70414 16.4932H8.70414V14.9655L7.23025 14.5636L6.70414 16.4932ZM3.46972 15.0379L4.57912 13.3738H4.57912L3.46972 15.0379ZM7.44015 -2H1.85274V2H7.44015V-2ZM7.51216 -2H7.44015V2H7.51216V-2ZM13.0996 -2H7.51216V2H13.0996V-2ZM12.592 16.702C13.4749 16.1134 15.3984 14.7084 16.3714 11.7896C17.3383 8.8888 17.2482 4.85893 14.9507 -0.757266L11.2485 0.757266C13.3168 5.81313 13.1458 8.81711 12.5766 10.5247C12.0134 12.2143 10.9456 12.9922 10.3732 13.3738L12.592 16.702ZM8.77428 18.4227C9.48757 18.2283 11.1866 17.6389 12.592 16.702L10.3732 13.3738C9.45011 13.9892 8.19486 14.4347 7.72205 14.5636L8.77428 18.4227ZM10.2482 25.5485V16.4932H6.24817V25.5485H10.2482ZM8.24817 27.5485H12.2894V23.5485H8.24817V27.5485ZM12.2894 27.5485C11.5421 27.5485 10.9362 26.9427 10.9362 26.1953H14.9362C14.9362 24.7335 13.7512 23.5485 12.2894 23.5485V27.5485ZM10.9362 26.1953C10.9362 25.448 11.5421 24.8421 12.2894 24.8421V28.8421C13.7512 28.8421 14.9362 27.6571 14.9362 26.1953H10.9362ZM12.2894 24.8421H2.91098V28.8421H12.2894V24.8421ZM2.91098 24.8421C3.65833 24.8421 4.26418 25.448 4.26418 26.1953H0.264184C0.264184 27.6571 1.44919 28.8421 2.91098 28.8421V24.8421ZM4.26418 26.1953C4.26418 26.9427 3.65833 27.5485 2.91098 27.5485V23.5485C1.44919 23.5485 0.264184 24.7335 0.264184 26.1953H4.26418ZM2.91098 27.5485H6.70414V23.5485H2.91098V27.5485ZM4.70414 16.4932V25.5485H8.70414V16.4932H4.70414ZM2.36032 16.702C3.76569 17.6389 5.46474 18.2283 6.17803 18.4227L7.23025 14.5636C6.75745 14.4347 5.5022 13.9892 4.57912 13.3738L2.36032 16.702ZM0.00164529 -0.757266C-2.29589 4.85893 -2.38599 8.8888 -1.41906 11.7896C-0.446134 14.7084 1.47741 16.1134 2.36032 16.702L4.57912 13.3738C4.00674 12.9922 2.93888 12.2143 2.37567 10.5247C1.80648 8.81711 1.63553 5.81313 3.70383 0.757266L0.00164529 -0.757266Z"  mask="url(#path-1-inside-1_2005_119)"/>
+                            </svg>
+
+                            <svg (click)="favoriteIcon()"  [ngClass]="{'favorite': favorite}"  class="like" width="15" height="27" viewBox="0 0 15 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.85274 0H7.44015H7.51216H13.0996C17.4654 10.6721 12.9379 14.0677 11.4826 15.0379C10.3184 15.814 8.84121 16.3315 8.24817 16.4932V25.5485H12.2894C12.6467 25.5485 12.9362 25.8381 12.9362 26.1953C12.9362 26.5525 12.6467 26.8421 12.2894 26.8421H2.91098C2.55376 26.8421 2.26418 26.5525 2.26418 26.1953C2.26418 25.8381 2.55376 25.5485 2.91098 25.5485H6.70414V16.4932C6.11109 16.3315 4.63394 15.814 3.46972 15.0379C2.01444 14.0677 -2.5131 10.6721 1.85274 0Z" fill="#9D4E6D"/>
+                                </svg>
+                    </div>
+                </div>
+                <ul class="expert-info">
+                    <li>
+                        <span class="info-title">Основные ароматы:</span>
+                        <span class="info-subtitle">
+                            <img src="../../../../assets/img/003-apple.png" alt="#">
+                            <img src="../../../../assets/img/001-lemon.png" alt="#">
+                            <img src="../../../../assets/img/002-orange.png" alt="#">
+                            <img src="../../../../assets/img/004-green-chili-pepper.png" alt="#">
+                        </span>
+                    </li>
+                    <li *ngFor="let info of productInfo">
+                        <span class="info-title">{{info.type}}:</span>
+                        <span class="info-subtitle">{{info.title}}</span>
+                    </li>
+                </ul>
+                <ul class="filter-content">
+                    <li *ngFor="let filter of filters">
+                        <span class="filter-text">{{filter.name}}:</span>
+                        <a class="filter-btn" [ngClass]="{'active': fil.filterActive}" (click)="filterActived(fil)"
+                            *ngFor="let fil of filter.types">
+                            {{fil.typeName}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="commentExperts">
+            <div class="accordingToExpert">
+                <h3 class="title">По мнению экспертов:</h3>
+                <p class="subtitle">«Вино ярко-рубинового цвета с лиловым оттенком. Обладает мощным пряно-фруктовым
+                    ароматом, в котором очевидны ноты спелой вишни и белого перца. Объемное и сочное во вкусе вино, с
+                    гармоничным, слегка перечным послевкусием».</p>
+                <div class="sub-content">
+                    <span class="sub-name">Дмитрий Руденко</span>
+                    <span class="sub-date">10.02.2020 г.</span>
+                </div>
+            </div>
+            <div class="recommendedByExperts">
+                <h3 class="title">Рекомендовано экспертами:</h3>
+
+                <div class="carusel" *ngIf="carousel">
+                    <svg class="carusel-btns" [ngClass]="{isActive: carousel.currentImageIndex === 0 }" (click)="prev()"
+                        width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292893 7.29289ZM50 7L1 7L1 9L50 9L50 7Z" />
+                    </svg>
+
+                    <div class="carusel-content">
+                        <div class="img-card">
+                            <div class="img-block">
+                                <img *ngIf="carousel.mainImage" src="{{carousel.mainImage}}" alt="#">
+                            </div>
+                            <h4 class="carousel-title">{{carousel.mainName}}</h4>
+                        </div>
+                        <div class="img-card img-hide">
+                            <div class="img-block">
+                                <img *ngIf="carousel.firstImage" src="{{carousel.firstImage}}" alt="#">
+                            </div>
+
+                            <h4 class="carousel-title">{{carousel.firstName}}</h4>
+                        </div>
+                        <div class="img-card img-hide">
+                            <div class="img-block">
+                                <img *ngIf="carousel.secondImage" src="{{carousel.secondImage}}" alt="#">
+                            </div>
+
+                            <h4 class="carousel-title">{{carousel.secondName}}</h4>
+                        </div>
+                    </div>
+
+                    <svg class="carusel-btns"
+                        [ngClass]="{isActive: carousel.currentImageIndex === carouselImg.length -1}" (click)="next()"
+                        width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M49.7071 8.70711C50.0976 8.31658 50.0976 7.68342 49.7071 7.29289L43.3431 0.928932C42.9526 0.538408 42.3195 0.538408 41.9289 0.928932C41.5384 1.31946 41.5384 1.95262 41.9289 2.34315L47.5858 8L41.9289 13.6569C41.5384 14.0474 41.5384 14.6805 41.9289 15.0711C42.3195 15.4616 42.9526 15.4616 43.3431 15.0711L49.7071 8.70711ZM0 9H49V7H0V9Z" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="feedBack">
+
+                <div class="feedBack-title">
+                    <h3>{{feedBackTitle}}</h3>
+                    <span class="feedBack-subtitle">5 отзывов</span>
+                </div>
+                <div class="feedBack-about">
+                    <div class="feedBack-block">
+                        <div class="feedBack-wrapper" *ngFor="let item of feedBack">
+                            <div class="feedBack-rating">
+                                <h4 class="feedBack-name">{{item.name}}</h4>
+                                <div class="rating">
+                                    <span>4.0</span>
+                                    <div class="rating-star">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="rating-date">
+                                    <span> отзыв оставлен </span>
+                                    <span> {{item.date}}</span>
+                                </p>
+                                <div class="previous-reviews">
+                                    <p class="previous-text">предыдущие отзывы</p>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="feedBack-info">
+                                <p class="info">{{item.text}} </p>
+                                <button class="info-btn">Дополнить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consumer-rating">
+                        <h3 class="consumer-title">Потребительский рейтинг:</h3>
+                        <div class="rating-block">
+                            <h3 class="consumer-number">3.5</h3>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="rating-btn" (click)="addComment()">Дополнить отзыв</button>
+                    </div>
+                </div>
+
+                <div class="comment" [ngClass]="{actived : active}">
+                    <i class="fas fa-times" (click)="addComment()"></i>
+                    <h3 class="comment-title">Отзыв о товаре Вино Красное Сухое Левкадия...</h3>
+                  
+                        <span class="overal-rating">Общая оценка</span>
+                        <div class="rating-star">
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                        </div>
+                    <h3 class="comment-message">Расскажите подробнее о продукте</h3>
+                    <textarea class="message" placeholder="Ваши впечатления от вина"></textarea>
+                    <div class="agreeModerationx">
+                        <input class="agreeModerationx-checkbox" type="checkbox">
+                        <span class="text">Согласен с</span>
+                        <span class="moderation-text text">правилами модерации</span>
+                        <p class="moderation-rules">Ваш отзыв будет виден после проверки</p>
+                    </div>
+                    <button class="comment-btn">Оставить отзыв</button>
+                </div>
+
+                <div class="accordingToExpert">
+                    <h3 class="title">О производителе и регионе:</h3>
+                    <p class="subtitle">Виноград собирают вручную и полученное виноградное сусло настаивается на мезге при пониженных температурах. Алкогольная ферментация проводится в цементных чанах, небольшая часть вина дополнительно выдерживается на мезге после ферментации.  40% вина отправляется на выдержку в дубе в течение 8 месяцев. Финальный бленд разливают по бутылкам спустя год.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="card-content">
+            <h3 class="title">Похожие вина</h3>
+            <cards-catalog></cards-catalog>
+            <div class="load-more">
+                <h6 class="load-more-text">загрузить ещё </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

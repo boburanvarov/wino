@@ -1,0 +1,40 @@
+
+
+
+    <div class="rating-wi">
+   
+        <h2 class="rating-text">Рейтинг Wi</h2>
+        <i class="fas fa-question-circle question" (click)="question()"></i>
+        <div [ngClass]="{'actived': active}" class="rating-info">
+            <p class="rating-info-subtitle">Это средний балл от экспертов WI полученный в рамках одобренных исследований. В расчет берется вино одного 
+                винтажа</p>
+                <i class="fas fa-times" (click)="question()"></i>
+        </div>
+    </div>
+    
+    <form class="filter-rating">
+        <div class="from">
+            <p class="from-text">от</p>
+            <input class="filter-rating-inp" type="number">
+        </div>
+    
+        <div class="before">
+            <p class="from-text">до</p>
+            <input class="filter-rating-inp" type="number">
+        </div>
+    </form>
+    
+    
+    <div class="filter" *ngFor="let fil of filter">
+        <button class="filter-btn" (click)="filterActive(fil)">
+            <i [ngClass]="{'isActive':fil.active}" class="fas fa-chevron-down"></i>
+            <span class="filter-title">{{fil.name}}</span>
+        </button>
+        <div [ngClass]="{'isActive':fil.active}" class="filterContent" *ngFor='let item of fil.children'>
+    
+            <input type="checkbox" class="filter-checkbox" [value]="item.id">
+            <span class="filter-text">{{item.name}}</span>
+        </div>
+    </div>
+    
+    <button class="reseting-all-filter">Сброс всех фильтров</button>

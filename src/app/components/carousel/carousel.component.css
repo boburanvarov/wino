@@ -1,0 +1,49 @@
+.carusel{
+    overflow: hidden;
+}
+
+.carusel-content {
+    display: flex;
+    gap: 0 50px;
+}
+
+.carusel .img-block{
+    width: 100%;
+    height: 372px;
+    background: grey;
+}
+
+.carusel .img-block img{
+    width: 578px;
+    height: 372px;
+}
+
+
+.carusel .carusel-btns{
+    display: flex;
+    gap: 0 20px;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.img-hide img{
+    opacity: 0.5;
+}
+
+.carusel .carusel-btns p{
+    font-family: "roboto-400";
+    font-size: 18px;
+    line-height: 34px;
+    color: #7b7b7b;
+   margin-top: -10px;
+}
+
+
+ .carusel-btns .caruselBtn.isActive{
+    fill: #7b7b7b;
+}
+
+.carusel-btns svg.caruselBtn{
+    cursor: pointer;
+    fill: #494949 ;
+}

@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+  <div class="container">
+    <div class="expert">
+        <div class="img-block">
+            <img src="../../../../assets/img/expert1.png" alt="#">
+            <div class="expert-icon">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="expert-text-content">
+            <h3 class="expert-name">Роберт Паркер</h3>
+            <p class="expert-subtitle">Опытный преподаватель и винный эксперт. Обладатель сертификата международной ассоциации сомелье (ASI), президент Московской Ассоциации Сомелье, победитель «Российского конкурса сомелье – 2021», победитель «Московского кубка сомелье – 2020», победитель «Балтийского кубка сомелье – 2019», серебряный призер «Московского кубка сомелье – 2019» и международного конкурса The Great Steppe Sommelier Cup 2019.</p>
+            <ul class="expert-info">
+                <li>
+                    <span class="info-title">Профессия:</span>
+                    <span class="info-subtitle">Эксперт винной индустрии</span>
+                </li>
+                <li>
+                    <span class="info-title">Область:</span>
+                    <span class="info-subtitle">Кавист</span>
+                </li>
+                <li>
+                    <span class="info-title">Эксперт по региону:</span>
+                    <span class="info-subtitle">США, Франция, Россия</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="system-info">
+        <h3 class="system-title">В системе </h3>
+        <div class="img-block">
+            <img src="../../../../assets/img/systemlogo.png" alt="#">
+        </div>
+        <div class="system-content" *ngFor="let info of systemInfo">
+            <h3 class="system-number">{{info.number}}</h3>
+            <p class="system-subtitle">{{info.title}}</p>
+        </div>
+
+    </div>
+
+    <div class="cards-filters">
+        <h3 class="terms-title">Роберт Паркер рекомендует</h3>
+        <div class="filter-all">
+            <div class="filter-type">
+                <side-menu></side-menu>
+            </div>
+            <div class="filter-cards">
+              <cards-catalog></cards-catalog>
+            </div>
+        </div>
+        <div class="load-more">
+            <h6 class="load-more-text">загрузить ещё </h6>
+        </div>
+    </div>
+   
+  </div>
+  <app-footer></app-footer>

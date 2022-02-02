@@ -1,0 +1,29 @@
+<div class="cards">
+    <div class="card" *ngFor="let vino of vinoInfo">
+        <div class="favorite-icon">
+            <img src="../../../../assets/img/Union.png" alt="">
+        </div>
+        <h2 class="card-title">{{vino.title}}</h2>
+        <div class="card-info">
+            <div class="card-img-block">
+                <img src="{{vino.img}}" alt="#">
+            </div>
+            <div class="card-info-text">
+                <p class="rating-text">Рейтинг Wi</p>
+                <h3 class="rating-number">{{vino.ratingNumber}}</h3>
+                <p class="main-flavors-text">Основные ароматы:</p>
+                <div class="flavors-img-block">
+                    <div class="fruits">
+                        <img src="../../../../assets/img/003-apple.png" alt="#">
+                        <img src="../../../../assets/img/001-lemon.png" alt="#">
+                    </div>
+                    <div class="fruits">
+                        <img src="../../../../assets/img/002-orange.png" alt="#">
+                        <img src="../../../../assets/img/004-green-chili-pepper.png" alt="#">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

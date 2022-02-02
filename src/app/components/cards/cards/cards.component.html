@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="filter-all">
+        <div class="filter-type">
+            <h3 class="terms-title">Вино</h3>
+            <side-menu></side-menu>
+        </div>
+        <div class="filter-cards">
+            <div class="filter-icons">
+                <i class="fas fa-th-large" routerLinkActive="actived"
+                 [routerLinkActiveOptions]="{exact: true}" 
+                 [routerLink]="['card-catalog']"></i>
+
+                <i class="fas fa-list-ul" routerLinkActive="actived"
+                 [routerLinkActiveOptions]="{exact: true}"
+                  [routerLink]="['card-list']"></i>
+
+            </div>
+            <div class="filter-content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+    <div class="load-more">
+        <h6 class="load-more-text">загрузить ещё </h6>
+    </div>
+</div>
+
+<app-footer></app-footer>

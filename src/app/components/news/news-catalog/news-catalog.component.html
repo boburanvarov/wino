@@ -1,0 +1,16 @@
+
+
+
+    <div class="cards">
+        <div class="news-card" *ngFor="let new of news">
+            <div class="new-img-block">
+                <img src="{{new.img}}" alt="#">
+            </div>
+            <h3 class="new-title">{{new.title}}</h3>
+            <p class="new-subtitle">{{new.subtitle}}</p>
+            <p class="new-read-more">
+                <span class="read-more">читать далее</span>
+                <span class="new-date"> {{new.date}}</span>
+            </p>
+        </div>
+    </div>

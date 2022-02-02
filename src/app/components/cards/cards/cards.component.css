@@ -1,0 +1,41 @@
+
+
+.container .terms-title{
+    margin:46px 0 37px;
+}
+
+.filter-all {
+    display: flex;
+    gap: 0 66px;
+}
+
+.filter-all .filter-type{
+    position: relative;
+    z-index: 9999;
+}
+
+.filter-all .filter-cards {
+    margin: 100px auto;
+}
+.filter-all .filter-cards .filter-icons{
+  display: flex;
+  justify-content: center;
+}
+.filter-all .filter-cards i{
+    margin-left: 20px;
+    cursor: pointer;
+    color:#BBBBBB;
+}
+
+.filter-all .filter-cards i.actived{
+    color: #202020;
+}
+
+.filter-all .filter-cards .filter-content{
+    margin: 50px 0;
+}
+
+.load-more {
+    margin-top: -60px;
+    text-align: center;
+}

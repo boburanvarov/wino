@@ -1,0 +1,67 @@
+.container{
+    max-width: 1295px;
+}
+
+.container .expert-main-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .expert-main-title .expert-question-title {
+    font-family: "roboto-400";
+    font-size: 20px;
+    line-height: 23px;
+    color: #373737;
+    text-decoration: underline dashed #B9B9B9;;
+    margin: 0;
+    margin-top: 80px;
+}
+
+.container .experts .expert-filter {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    margin-bottom: 70px;
+}
+
+.container .experts .expert-filter-btn {
+    width: 168px;
+    height: 36px;
+    background: #FFFFFF;
+    color: #7D7D7D;
+    border: 1px solid #9D9D9D;
+    border-radius: 10px;
+    font-family: "roboto-400";
+    font-size: 24px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+
+.container .expert.active {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0 76px;
+    margin-bottom: 120px;
+}
+
+.container .expert .expert-subtitle {
+    overflow-y: scroll;
+}
+
+.container .expert .expert-subtitle::-webkit-scrollbar{
+    display: none;
+}
+
+.container .expert .expert-text-content .more {
+    width: 309px;
+    height: 54px;
+    background: #242424;
+    color: #f5f5f5;
+    border-radius: 4px;
+    font-family: "roboto-500";
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+    cursor: pointer;
+}

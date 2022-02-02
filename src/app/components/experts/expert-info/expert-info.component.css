@@ -1,0 +1,81 @@
+.expert {
+    margin-top: 83px;
+}
+
+.expert .img-block {
+    margin-top: 20px;
+}
+
+.expert .img-block .expert-icon{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 36px;
+    color:#969696;
+    font-size: 18px;
+}
+
+.expert .img-block .expert-icon i{
+    cursor: pointer;
+}
+
+.expert .expert-subtitle {
+    width: 869px;
+}
+
+.system-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid #656565;
+    border-radius: 20px;
+    height: 176px;
+    padding: 33px;
+}
+
+.system-info .system-title{
+    font-family: "roboto-400";
+    font-size: 35px;
+    line-height: 41px;
+    color: #000;
+}
+
+.system-info  .system-content{ 
+    width: 133px;
+}
+
+.system-info .system-number{
+    font-family: "roboto-300";
+    font-size: 50px;
+    line-height: 59px;
+    color: #000;
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+
+.system-info .system-subtitle{
+    font-family: "roboto-400";
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E4E4E;
+}
+
+.cards-filters{
+    margin-top: 90px;
+}
+
+.cards-filters .terms-title{
+    text-align: center;
+    color: #414141;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.cards-filters .filter-all{
+    display: flex;
+    gap: 0 45px;
+}

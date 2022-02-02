@@ -1,0 +1,109 @@
+.header {
+    background: #C4C4C4;
+    height: 92px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 212px;
+    margin-top: 35px;
+}
+
+.header .main-menu.active {
+    display: none;
+}
+
+.header .main-menu .logo .logo-item {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header .main-menu .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0 44px;
+    list-style: none;
+}
+
+.header .menu .menu-item a,
+.register .register-title {
+    color: #2C2C2C;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    font-family: 'roboto-400';
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin-top: 25px;
+}
+
+.register.active {
+    display: none;
+}
+
+.register .userIcon {
+    margin-top: -5px;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    background: #03050C;
+}
+
+.search-content {
+    display: flex;
+    margin: 10px auto;
+}
+
+.search{
+    margin-top: 10px;
+}
+
+.search, .fa-times-circle {
+    display: none;
+}
+
+.search.active{
+    display: block;
+}
+
+.fa-times-circle.active{
+    font-size: 39px !important;
+    color: #dcdcdc;
+    margin-left: 117px;
+    display: block;
+}
+
+
+
+
+.search-content .search-icons {
+    position: relative;
+    margin: 15px 0 0 20px;
+    cursor: pointer;
+}
+
+.search-content .search-icons i {
+    position: absolute;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.search-icons .fa-search.active {
+    display: none;
+}

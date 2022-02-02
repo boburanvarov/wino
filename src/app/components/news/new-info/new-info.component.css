@@ -1,0 +1,86 @@
+.container {
+    max-width: 1245px;
+}
+
+
+.news-info .img-block{
+    height: 280px;
+    width: 600px;
+}
+.news-info .img-block img{
+    width: 100%;
+    height: 100%;
+}
+
+.news-info .news-content{
+    margin-top: 45px;
+    width: 878px;
+}
+
+.news-info .news-content .subtitle{
+    font-family: "roboto-400";
+    font-size: 18px;
+    line-height: 34px;
+    color: #7b7b7b;
+}
+
+.news-info .news-content .subtitle.isTitle{
+    color: #000;
+}
+
+.news-info .share-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 64px 0 81px;
+}
+
+.news-info .share-block .share-text{
+    font-family: "roboto-400";
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.news-info .share-block .share-text span{
+    color: #D4D4D4;
+}
+
+.news-info .share-block .share{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 30px;
+}
+
+
+.news-info .share-block .share i{
+    margin-top: -10px;
+    color: #D4D4D4;
+    cursor: pointer;
+}
+
+
+.cards-block{
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.banner .banner-search .search .search-btn .btn-subtitle{
+    font-family: "roboto-700";
+    margin-top: 8px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.banner .banner-search .search-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "roboto-700";
+    color: #232323;
+}
+
+.banner .banner-search .search {
+    margin-top: 46px;
+}

@@ -1,0 +1,19 @@
+.container{
+    max-width: 1255px;
+}
+.about-text-content{
+    width: 878px;
+}
+
+
+.about-text-content .about-text{
+    font-family: "roboto-400";
+    font-size: 18px;
+    line-height: 34px;
+    color: #7b7b7b;
+    margin-bottom: 40px;
+}
+
+.carousel-block{
+    margin: 86px 0 200px;
+}

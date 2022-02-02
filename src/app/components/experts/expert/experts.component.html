@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="experts">
+        <div class="expert-main-title">
+            <h3 class="terms-title">Эксперты</h3>
+            <p class="expert-question-title">Вы эксперт?</p>
+        </div>
+        <div class="expert-filter">
+            <button class="expert-filter-btn" *ngFor="let filter of expertFilter">{{filter.name}}</button>
+        </div>
+        <div class="expert" [ngClass]="{'active': expert.isActive}" *ngFor="let expert of experts">
+            <div class="img-block">
+                <img src="{{expert.img}}" alt="#" class="expert-img">
+            </div>
+            <div class="expert-text-content">
+                <h3 class="expert-name">{{expert.name}}</h3>
+                <p class="expert-subtitle">{{expert.subtitle}}</p>
+                <button class="more">Подробнее</button>
+            </div>
+        </div>
+        <div class="load-more">
+            <h6 class="load-more-text">загрузить ещё </h6>
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

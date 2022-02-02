@@ -1,0 +1,16 @@
+.container{
+    max-width: 1265px;
+}
+.text-content {
+    margin-bottom: 200px;
+}
+.text-content .text {
+    font-family: 'roboto-400';
+    font-size: 22px;
+    line-height: 38px;
+    color: #3D3D3D;
+}
+
+.text-content .text .subtitle{
+    font-family: 'roboto-500';
+}

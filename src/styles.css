@@ -1,1 +1,293 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1435px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    cursor: pointer;
+    color: #101010;
+    font-family: 'inter-400';
+}
+
+/* banner */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ececec;
+    position: relative;
+    height: 352px;
+}
+
+.banner-search {
+    position: absolute;
+    margin-left: 180px;
+    text-align: center;
+}
+
+.search-title {
+    font-size: 32px;
+    line-height: 37px;
+    font-family: "roboto-500";
+    color: #282828;
+    margin: 0;
+}
+
+ .search-subtitle {
+    font-size: 16px;
+    line-height: 37px;
+    font-family: "roboto-500";
+    color: #4e4e4e;
+    margin: 0;
+}
+
+.search {
+    display: flex;
+}
+
+.search .search-inp {
+    width: 800px;
+    height: 55px;
+    background: #fff;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+    padding-left: 20px;
+}
+
+ .search .search-inp::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "inter-400";
+    color: #4E4E4E;
+}
+
+.search .search-btn {
+    background: #03050C;
+    border-radius: 4px;
+    width: 200px;
+    height: 55px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search .search-btn .fa-search {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* text */
+
+.text-content {
+    margin-bottom: 230px;
+}
+
+/* terms-title */
+
+.terms-title {
+    color: #333333;
+    font-family: 'roboto-500';
+    font-size: 36px;
+    line-height: 43px;
+    margin: 60px 0 83px;
+}
+
+/* rating-text */
+
+.rating-text,
+.main-flavors-text {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "roboto-400";
+    color: #8C8C8C;
+    margin: 0;
+}
+
+.rating-number {
+    font-size: 66px;
+    line-height: 77px;
+    font-family: "roboto-500";
+    color: #9D4E6D;
+}
+
+/* load-more */
+
+.load-more {
+    margin-top: 60px;
+}
+
+.load-more-text {
+    font-family: "roboto-400";
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2B2B;
+    border-bottom: 2px dashed;
+    width: 149px;
+    margin: 0 auto 100px;
+    cursor: pointer;
+}
+
+/* cards */
+.cards-title {
+    font-family: "inter-600";
+    font-size: 46px;
+    line-height: 52px;
+    color: #282828;
+    margin: 150px 0 100px;
+    text-align: center;
+}
+
+/* news */
+.new-read-more .read-more {
+    font-family: "roboto-400";
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* breadcrumb */
+nz-breadcrumb {
+    margin-top: 65px !important;
+}
+
+nz-breadcrumb-item {
+    font-family: "roboto-400";
+    font-size: 16px;
+    line-height: 19px;
+}
+
+nz-breadcrumb-item .breadcrumb-link-first {
+    color: #474747;
+}
+
+nz-breadcrumb-item .breadcrumb-link-second {
+    color: #03050C;
+    ;
+}
+
+/* expert */
+
+.expert {
+    display: flex;
+    flex-direction: row;
+    gap: 0 76px;
+    margin-bottom: 120px;
+}
+
+.expert .img-block {
+    width: 327px;
+    height: 321px;
+}
+
+.expert .img-block img {
+    height: 347px;
+}
+
+.expert .expert-text-content .expert-name {
+    font-family: "roboto-400";
+    font-size: 34px;
+    line-height: 40px;
+    color: #000;
+}
+
+.expert .expert-subtitle {
+    font-family: "roboto-400";
+    font-size: 20px;
+    line-height: 38px;
+    color: #4E4E4E;
+    height: 190px;
+}
+
+/* carousel-block */
+
+.carousel-block {
+    margin-bottom: 90px;
+}
+
+
+/* info */
+ul.expert-info {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 800px;
+    margin-top: 30px;
+}
+
+ul.expert-info li {
+    border-bottom: 1px dotted #C2C2C2;
+    position: relative;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+ul.expert-info li span {
+    background-color: #FFF;
+    margin: 0;
+}
+
+ul.expert-info li span.info-title, ul.expert-info li span.info-subtitle {
+    bottom: -5px;
+}
+
+ul.expert-info span.info-title {
+    position: relative;
+    margin-right: 7em;
+    padding-right: 2px;
+    font-family: "roboto-400";
+    font-size: 17px;
+    line-height: 20px;
+    color: #4E4E4E;
+    width: 50%;
+}
+
+ul.expert-info span.info-subtitle {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    padding-left: 5px;
+    font-family: "roboto-500";
+    font-size: 16px;
+    line-height: 19px;
+    color: #444444;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+}
+
+ul.expert-info span.info-subtitle img {
+    margin-top: -10px;
+
+}
+
+/* fovarites */
+.favorite-icon .noLike.favorite {
+    fill: #4E4E4E;
+    display: block;
+}
+
+.favorite-icon .like {
+    display: none;
+    position: absolute;
+    /* top: 0; */
+}
+
+.favorite-icon .like.favorite {
+    display: block;
+}

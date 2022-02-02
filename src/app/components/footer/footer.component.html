@@ -1,0 +1,50 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+
+            <div  class="logo">
+                <h2 class="logo-item">ЛОГО</h2>
+            </div>
+
+            <div class="main-sections">
+                <h3 class="main-section-title">Основные разделы</h3>
+                <div class="main-catalog">
+                    <div class="main-sections-catalog" >
+                        <p class="main-sections-catalog-item" routerLinkActive="active current" routerLink="/" [routerLinkActiveOptions]="{exact:true}">Главная</p>
+                        <p class="main-sections-catalog-item" routerLinkActive="active current" routerLink="/cards/card-catalog">Каталог</p>
+                        <p class="main-sections-catalog-item" routerLinkActive="active current" routerLink="/news">Новости</p>
+                       </div>   
+                       <div class="main-sections-catalog" >
+                        <p class="main-sections-catalog-item" routerLinkActive="active current" routerLink="/experts">Эксперты</p>
+                        <p class="main-sections-catalog-item" routerLinkActive="active current" routerLink="/about-project">О проекте</p>
+                       </div>  
+                </div>
+            </div>
+            <div class="personal-area">
+                <h3 class="personal-area-title">Личный кабинет</h3>
+                <div class="personal-area-catalog">
+                    <p class="personal-area-catalog-item">Вход</p>
+                    <p class="personal-area-catalog-item">Регистрация</p>
+                    <p class="personal-area-catalog-item">Вспомнить пароль</p>
+                </div>
+            </div>
+            <div class="write-to-us">
+                <h3 class="write-title">Напишите нам</h3>
+               <div class="write-icons">
+                <i class="fab fa-telegram-plane"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="far fa-envelope"></i>
+               </div>
+               <p class="write-subtitle" routerLinkActive="active current"  (click)="terms()">Пользовательское соглашение</p>
+               <p class="write-subtitle" routerLinkActive="active current" (click)="procressingPolicy()">Политика обработки персональных данных</p>
+            </div>
+        </div>
+
+            <div class="cookie">
+                <p class="cookie-title">Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем cookies</p>
+               <button class="cookieBtn">ok</button>
+            </div>
+        
+    </div>
+</footer>
